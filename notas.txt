@@ -123,7 +123,12 @@ public class Doctor {
 
 Los Modificadores de Acceso nos ayudan a limitar desde dónde podemos leer o modificar atributos especiales de nuestras clases. Podemos definir qué variables se pueden leer/editar por fuera de las clases donde fueron creadas. Esto lo conocemos como Encapsulamiento.
 
-================================ Clase  ================================
+================================ Clase 13 Getters y Setters ================================
+
+Los Getters y Setters nos permiten leer y escribir (respectivamente) los valores de nuestras variables privadas desde fuera de la clase donde fueron creadas. Con los Getters obtenemos los datos de las variables y con los Setters asignamos o cambiamos su valor.
+
+También puedes usar los atajos de tu IDE favorito para generar los métodos getters y setters de todas o algunas de tus variables.
+
 ================================ Clase  ================================
 ================================ Clase  ================================
 ================================ Clase  ================================
