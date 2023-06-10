@@ -119,7 +119,10 @@ public class Doctor {
   }
 }
 
-================================ Clase  ================================
+================================ Clase 12 Encapsulamiento: Modificadores de acceso ================================
+
+Los Modificadores de Acceso nos ayudan a limitar desde dónde podemos leer o modificar atributos especiales de nuestras clases. Podemos definir qué variables se pueden leer/editar por fuera de las clases donde fueron creadas. Esto lo conocemos como Encapsulamiento.
+
 ================================ Clase  ================================
 ================================ Clase  ================================
 ================================ Clase  ================================
