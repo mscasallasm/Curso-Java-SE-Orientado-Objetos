@@ -1,5 +1,3 @@
-import ui.User;
-
 import java.util.ArrayList;
 import java.util.Date;
 
