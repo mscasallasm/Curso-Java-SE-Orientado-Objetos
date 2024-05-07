@@ -22,6 +22,17 @@ public class Main {
         User userPa = new Patient("Pepe", "pepes@correo.com");
         userPa.showDataUser();
 
+        User user1 = new User("Pepe", "pepe@correo.com") {
+            @Override
+            public void showDataUser() {
+                System.out.println("Doctor\n");
+                System.out.println("Hospital: Cruz Verde");
+                System.out.println("Departamente: Geriatría");
+            }
+        };
+
+        user1.showDataUser();
+
         //        for (model.Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()) {
 //            System.out.println(aA.getDate() + " " + aA.getTime());
 //        }

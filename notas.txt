@@ -313,7 +313,20 @@ Archivos de la clase
 
 /
 
-================================ Clase  ================================
+================================ Clase 28 ================================
+Las Clases Anónimas son una forma de instanciar clases abstractas sin necesidad de usar sus clases hijas. Pero este tipo de instanciación tiene algunas restricciones: el ciclo de vida de estas instancias NO es duradero, no las tendremos disponibles durante toda la ejecución del programa.
+
+// Clase Abstracta:
+public abstract class Figura {
+  abstract void dibujar();
+}
+
+// Clase Anónima:
+User user = new User() {
+  @Override
+  public void showDataUser() {
+    // Instrucciones...
+  }
 ================================ Clase  ================================
 ================================ Clase  ================================
 ================================ Clase  ================================
