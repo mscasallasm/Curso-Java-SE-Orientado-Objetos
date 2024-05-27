@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class UIDoctorMenu {
     public static ArrayList<Doctor> doctorAvailableAppointments = new ArrayList<>();
 
-    public static void showDoctorMenu() {
+    public static void showDoctorMenu() throws ParseException {
         int response = 0;
         do {
             System.out.println("\n\n");
@@ -24,6 +24,7 @@ public class UIDoctorMenu {
 
             switch (response) {
                 case 1:
+                    showAddAvailableAppointmentsMenu();
                     break;
                 case 2:
                     break;
@@ -54,7 +55,7 @@ public class UIDoctorMenu {
             
             if (response > 0 && response < 5) {
                 int monthSelected = response;
-                System.out.println(monthSelected + " . " + UIMenu.MONTHS[monthSelected]);
+                System.out.println(monthSelected + " . " + UIMenu.MONTHS[monthSelected-1]);
 
                 System.out.println("Insert the date available: [dd/mm/yyyy]");
                 String date = sc.nextLine();
