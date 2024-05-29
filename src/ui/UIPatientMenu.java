@@ -1,7 +1,12 @@
 package ui;
 
+import model.Doctor;
+
 import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.Map;
 import java.util.Scanner;
+import java.util.TreeMap;
 
 public class UIPatientMenu {
 
@@ -36,6 +41,27 @@ public class UIPatientMenu {
         do {
             System.out.println("::Book an appointment");
             System.out.println(":: Select date: ");
+
+            Map<Integer, Map<Integer, Doctor>> doctors = new TreeMap<>();
+            int k = 0;
+            for (int i = 0; i < UIDoctorMenu.doctorAvailableAppointments.size(); i++) {
+                ArrayList<Doctor.AvailableAppointment> availableAppointments = UIDoctorMenu.doctorAvailableAppointments.get(i).getAvailableAppointments();
+
+                Map<Integer, Doctor> doctorAppointments = new TreeMap<>();
+
+                for (int j = 0; j < availableAppointments.size(); j++) {
+                    k++;
+                    System.out.println(k + ". " + availableAppointments.get(i).getDate());
+                    doctorAppointments.put(Integer.valueOf(j), UIDoctorMenu.doctorAvailableAppointments.get(i));
+
+                    doctors.put(Integer.valueOf(k), doctorAppointments);
+                }
+
+            }
+
+            Scanner sc = new Scanner(System.in);
+            int responseDateSelected = Integer.valueOf(sc.nextLine());
+
 
         } while (response != 0);
     }
