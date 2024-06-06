@@ -28,6 +28,7 @@ public class UIPatientMenu {
                     showBookAppointmentMenu();
                     break;
                 case 2:
+                    showPatientMyAppointments();
                     break;
                 case 0:
                     UIMenu.showMenu();
@@ -75,6 +76,9 @@ public class UIPatientMenu {
             System.out.println(doctorSelected.getName()
                     + ". Date: " + doctorSelected.getAvailableAppointments().get(indexDate).getDate()
                     + ". Time: " + doctorSelected.getAvailableAppointments().get(indexDate).getTime());
+
+            System.out.println("Confirm your appointment: \n1. Yes \n2. Change Data");
+            response = Integer.valueOf(sc.nextLine());
 
             if (response == 1) {
                 UIMenu.patientLogged.addAppointmentDoctors(
